@@ -2,8 +2,7 @@ FROM 	hypriot/rpi-python
 
 # install dependencies
 RUN	apt-get update \
-	&& apt-get install --no-install-recommends -y wget curl unzip iputils-ping && \
-	rm -rf /var/lib/apt/lists/*
+	&& apt-get install --no-install-recommends -y wget curl unzip iputils-ping
 
 
 RUN	wget --no-check-certificate https://github.com/atarola/pyjojo/archive/master.zip && \

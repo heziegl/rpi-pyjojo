@@ -2,8 +2,8 @@
 
 PORT=3003
 
-sudo docker run -ti --rm \
+sudo docker run -t -d \
                 -v $(pwd)/pyjojo_scripts:/pyjojo_scripts \
-                -p 3003:3003 \
+                -p $PORT:3003 \
+                --name="pyjojo" \
                 heziegl/rpi-pyjojo
-
